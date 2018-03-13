@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Weather App</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/domashnogallery.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <div class="galleryLeft">
+      <div class="gallery__button gallery__button--left">
+        <button id="nazad"> Back </button>
+      </div>
+      <div ondrop="dropped(event)"
+            ondragenter="enter(event)"
+            ondragleave="leave(event)"
+            ondragover="dragOver(event)" 
+             class="galerija">
+        
+      </div>
+      <div class="gallery__button gallery__button--right">
+        <button id="napred"> Next </button>
+      </div>
+    </div>
+    <div draggable="true" ondragstart="dragStart(event)" class="gallery">
+      <img class="gallery__content-image" src="https://vignette.wikia.nocookie.net/dragonballfanon/images/7/70/Random.png/revision/latest?cb=20161221030547">
+      <img class="gallery__content-image" src="https://pbs.twimg.com/profile_images/675002642196729857/A0OpcJpA.png">
+      <img class="gallery__content-image" src="https://orig00.deviantart.net/41fb/f/2012/351/a/2/random_character_1_by_mnrart-d5odgq0.gif">
+      <img class="gallery__content-image" src="https://funalive.com/uploads/files/article/images/funny-interesting-pictures_24sep16-3.jpg">
+    </div>
+    
+  <!--   <div ondrop="dropped(event)"
+          ondragenter="enter(event)"
+          ondragleave="leave(event)"
+          ondragover="dragOver(event)" class="galerija" style="width:500px;
+         height:500px;
+         background:lightblue;">
+ 
+     </div> -->
+ 
+    
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="js/domashnogallery.js"></script>
+  </body>
+</html>
